@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title><!--{$category.name}-->_<!--{$category.title}-->_<!--{$site.title}--></title>
+    <meta name="keywords" content="<!--{$category.keywords}-->" />
+    <meta name="description" content="<!--{$category.description}-->" />
+    <link href="/style/css/css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<!--{include file="./header.htm"}-->
+<!--{include file="./nav.htm"}-->
+
+<div class="hslms_bg_video w100">
+    <div class="hslms_bg_wz">
+        <h1>HAPPY LEARNING LIFE<span>温馨校园 开心学习 快乐生活</span></h1>
+    </div>
+    <video muted autoplay loop src="/style/video/pp.mp4"></video>
+</div>
+
+<div class="hslms_box w1200">
+    <div class="hslms_box_menu">
+        <!--{iCMS:category:list loop="true" row="10" stype="sub" cid="9"}-->
+        <a href="<!--{$category_list.url}-->"><!--{$category_list.name}--></a>
+        <!--{/iCMS}-->
+
+    </div>
+
+    <div class="hslhjbox w1200">
+
+        <!--{iCMS:article:list loop="true" row="9" page="true" cid="$category.cid"}-->
+            <div class=" hslhjbox_list hslhjbox_list_1">
+                <a href="<!--{$article_list.url}-->" title="<!--{$article_list.title}-->" class="animate">
+                    <span class="hslhj_ico animate"><i class="hslfont hsl-play"></i></span>
+                    <img src="<!--{$article_list.pic.url}-->" alt="<!--{$article_list.title}-->">
+                    <p><!--{$article_list.title}--></p>
+                </a>
+            </div>
+        <!--{/iCMS}-->
+        <div style="clear:both"></div>
+    </div>
+    <div class="hslpage">
+        <!--{$iCMS.PAGE.NAV}-->
+    </div>
+</div>
+
+<!--{include file="./from.htm"}-->
+<!--{include file="./footer.htm"}-->
+
+<script type="text/javascript">
+    var urlstr = location.href;
+    var urlstatus=false;
+    $(".hslms_box_menu a").each(function () {
+        if ((urlstr + '/').indexOf($(this).attr('href')) > -1&&$(this).attr('href')!='/') {
+            $(this).addClass('hslon'); urlstatus = true;
+        } else {
+            $(this).removeClass('hslon');
+        }
+    });
+    if (!urlstatus) {$(".hslms_box_menu a").eq(0).addClass('hslon'); }
+
+</script>
+</body>
+</html>

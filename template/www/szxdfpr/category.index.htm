@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <base target="_blank"/>
+    <title><!--{$category.name}-->_<!--{$category.title}-->_<!--{$site.title}--></title>
+    <meta name="keywords" content="<!--{$category.keywords}-->" />
+    <meta name="description" content="<!--{$category.description}-->" />
+    <link href="/style/css/article.css" rel="stylesheet" type="text/css">
+    <script src="/style/js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+
+<!--{include file="./header.htm"}-->
+<!--{include file="./nav.htm"}-->
+<div class="banner">
+    <a href="javascript:;"   onclick="swtClick()"  rel="nofollow">
+        <img src="/style/images/about/banner.jpg" alt="" width="100%">
+    </a>
+</div>
+<div class="center">
+    <div class="f_left">
+        <div class="news_tit">
+
+            您现在的位置：<a href="<!--{$site.url}-->">首页 ></a>
+            <!--{foreach value="catenav" from="$category.navArray"}-->
+                <a href='<!--{$catenav.url}-->'> <!--{$catenav.name}--> ></a>
+            <!--{/foreach}-->
+
+
+        </div>
+
+        <ul class="news_list">
+
+            <!--{iCMS:article:list loop="true" row="10" page="true" cid="$category.cid"}-->
+            <li>
+                <a href="<!--{$article_list.url}-->" target="_blank" title="<!--{$article_list.title}-->"><img src="<!--{$article_list.pic.url}-->" alt="<!--{$article_list.title}-->" width="272" height="180" border="0" /></a>
+                <div class="news_main">
+<span class="black">
+<a href="<!--{$article_list.url}-->" target="_blank" title="<!--{$article_list.title}-->"><b><!--{$article_list.title}--></b></a>
+</span><span class="senddate"><!--{$article_list.pubdate|date:"Y-m-d"}--></span>
+                    <p>
+                        <a href="<!--{$article_list.url}-->"><!--{$article_list.description}--> </a>
+                    </p>
+                    <a href="<!--{$article_list.url}-->"><span class="coof">查看全文 >></span></a>
+                </div>
+                <div class="demo"></div>
+            </li>
+            <!--{/iCMS}-->
+
+        </ul>
+        <div class="dbenx_pages">
+                <!--{$iCMS.PAGE.NAV}-->
+        </div>
+    </div>
+
+
+    <!--{include file="./right.htm"}-->
+    <script type="text/javascript">
+        setInterval(
+            function () {
+                for(i=0; i<$('.zytj-num').length; i++){
+                    var num = parseInt(40*Math.random()+10);
+                    $('.zytj-num').eq(i).html(num);
+                }
+            },2000)
+    </script>
+</div>
+<div class="demo">
+</div>
+
+<!--{include file="./footer.htm"}-->
+
+
+
+
+</body>
+
+</html>

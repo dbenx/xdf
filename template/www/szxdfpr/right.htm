@@ -1,0 +1,115 @@
+<div class="f_right">
+    <div class="con_right">
+        <ul class="tel">
+            <li>
+                <img src="/style/images/r_img.jpg">
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="qqUrl" target="_blank"><img src="/style/images/r_img_1.jpg"></a>
+            </li>
+        </ul>
+        <ul class="qu_nav">
+            <li>
+                <a href="/spjj/13473.html" target="_blank"><img src="/style/images/con_img_1.jpg"><br>
+                    在线参观</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" onclick="swtClick()"  target="_blank"><img src="/style/images/con_img_2.jpg"><br>
+                    入学答疑</a>
+            </li>
+            <li>
+                <a href="/lxlx/" target="_blank"><img src="/style/images/con_img_3.jpg"><br>
+                    乘车路线</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" onclick="swtClick()"  target="_blank"><img src="/style/images/con_img_4.jpg"><br>
+                    预约接站</a>
+            </li>
+            <div class="demo"></div>
+        </ul>
+    </div>
+    <div>
+        <img src="/style/images/r_sub.jpg">
+    </div>
+    <div class="main_sub">
+        <div class="course">
+
+            <a href="<!--{$article_list.url}-->"></a>
+
+            <!--{iCMS:article:list loop="true" row="10" cid="2,3,4" orderby="sort" pid='0' }-->
+            <span class="c_red"><i class="zytj-num">32</i>人正在咨询<a href="<!--{$article_list.url}-->"><!--{$article_list.title}--></a></span><br>
+            <!--{/iCMS}-->
+
+
+            <div class="hot_course">
+                <div class="hot_course_tit">
+                    热门专业
+                </div>
+                <ul>
+                    <li>
+                        <!--{iCMS:article:list loop="true" row="20" cid="2,3,4" orderby="sort"}-->
+                        <a href="<!--{$article_list.url}-->"><!--{$article_list.title}--></a>
+                        <!--{/iCMS}-->
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="on_course">
+                <form name="myform" action="/plus/baoming.php" accept-charset="utf-8" enctype="multipart/form-data" method="post">
+                    姓名：
+                    <input name="name" type="text" style="border:#999 solid 1px;">
+                    <br>
+                    电话：
+                    <input name="phone" type="text" style="border:#999 solid 1px;">
+                    <br>
+                    专业：
+                    <select name="zhuanye" class="zhuanye">
+                        <option value="来学校后根据情况选择专业" selected="selected">=请选择专业=</option>
+                        <option value="中餐专业">中餐专业</option>
+                        <option value="西餐专业">西餐专业</option>
+                        <option value="西点专业">西点专业</option>
+                        <option value="来校后定制">来校后定制</option>
+                    </select>
+
+                    <input name="submit" type="submit" style="background:url(/style/images/menu.jpg) no-repeat; margin-bottom: 20px; float: left; width:190px; height:38px;" value=""/>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="question mt20">
+        <h3>猜你想知道</h3>
+        <ul>
+            <li><em class="large">1</em><a onclick="swtClick()"  href="javascript:void(0);">我没有基础，能学会吗？</a></li>
+            <li><em class="large">2</em><a onclick="swtClick()"  href="javascript:void(0);">初中没有毕业也可以报名吗？</a></li>
+            <li><em class="large">3</em><a onclick="swtClick()"  href="javascript:void(0);">学厨师对年龄有限制吗？</a></li>
+            <li><em>4</em><a onclick="swtClick()"  href="javascript:void(0);">学习一年，学费多少？</a></li>
+            <li><em>5</em><a onclick="swtClick()"  href="javascript:void(0);">女生适合学哪些专业？</a></li>
+            <li><em>6</em><a onclick="swtClick()"  href="javascript:void(0);">毕业就能拿到学历吗？</a></li>
+            <li><em>7</em><a onclick="swtClick()"  href="javascript:void(0);">考个厨师证要多少钱</a></li>
+            <li><em>8</em><a onclick="swtClick()"  href="javascript:void(0);">学校住宿是怎么安排的？</a></li>
+            <li><em>9</em><a onclick="swtClick()"  href="javascript:void(0);">什么时间段都可以去学吗？</a></li>
+            <li><em>10</em><a onclick="swtClick()"  href="javascript:void(0);">什么时候开始报名？</a></li>
+        </ul>
+    </div>
+    <style>
+        .question h3{font-size:18px;line-height:40px;border-bottom:1px solid #DDD;}
+        .question ul{padding:10px 0;}
+        .question ul li{line-height:30px;}
+        .question ul li em{color:#888;margin-right:10px;float:left;}
+        .question ul li em.large{color:#EE7800;font-size:24px;}
+        .question ul a{display:inline-block;font-size:16px;}
+
+        .tj_course h2{font-size:18px;line-height:40px;border-bottom:1px solid #DDD;}
+        .tj_course h2 span{float:right;font-size:14px;}
+        .tj_course ul{padding:15px 0;}
+        .tj_course ul li{line-height:30px;font-size:16px;}
+        .tj_course ul li span{float:right;font-size:14px;}
+
+        .tj_video h2{font-size:18px;line-height:40px;border-bottom:1px solid #DDD;}
+        .tj_video h2 span{float:right;font-size:14px;}
+        .tj_video ul{padding:15px 0;}
+        .tj_video ul li{height:30px;font-size:14px;overflow:hidden;line-height:30px;}
+        .tj_video_1{padding:15px 0 0;}
+        .tj_video_1 img{width:100%;height:160px;}
+    </style>
+</div>
