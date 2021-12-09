@@ -1,0 +1,111 @@
+@import"pub.css";
+/* CSS Document */
+body{position: relative;}
+/*��ʦ�б�*/
+.hslms_bg_video{width:100%; height:430px; overflow:hidden; position:relative;}
+.hslms_bg_video .hslms_bg_wz{ width:100%; position:absolute; height:430px; background-color:rgba(0,0,0,.58); z-index:2; text-align:center;left:0;top:0;}
+.hslms_bg_video video{ width:100%; position:absolute; z-index:-1; top:-100px;left:0;}
+.hslms_bg_video .hslms_bg_wz h1{ color:#fff; font-size:60px; font-weight:normal; padding-top:140px; line-height:60px; height:120px;text-transform:Uppercase;}
+.hslms_bg_video .hslms_bg_wz h1 span{ display:block; font-size:42px;}
+
+.top_fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 995;
+	background-color: #fff;
+	border-bottom: 1px solid #ff5500;
+}
+.mscon{width:100%; overflow: hidden;}
+.msbtn{width:750px; overflow: hidden; margin:20px auto;}
+.msbtnli{float:left; width:200px;border: 1px #999 solid; border-radius: 4px; overflow: hidden; margin-left: 45px; cursor: pointer;}
+.msbtn1 p{margin-left: 0!important;}
+.msbtnli img{
+	display: block;
+	float: left;
+	opacity: 0.5;
+}
+.msbtnli p{float:left; margin-left: 20px; font-size: 20px; color:#333; line-height: 46px;}
+.msbtn_click{
+	border: 1px solid #ff5500;
+}
+.msbtn_click p{
+	color:#ff5500!important;
+}
+.msbtn_click img{
+	opacity: 1!important;
+}
+.msbox{
+	width:1210px;
+	overflow: hidden;
+	margin: 20px auto;
+}
+.msli{
+	width:580px;
+	border: 1px solid #686868;
+	border-radius: 10px;
+	box-sizing: border-box;
+	padding: 30px 20px;
+	padding-bottom:0;
+	overflow: hidden;
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.msli img{
+	float: left;
+	display: block;
+	width: 180px;
+	height: 420px;
+}
+.msli .mstxt{
+	width:330px;
+	float:left;
+	overflow: hidden;
+	margin-left: 20px;
+}
+.msli h3{
+	color:#820000;
+	font-size: 20px;
+	line-height: 40px;
+}
+.msli p{
+	color:#686868;
+	font-size: 14px;
+	line-height: 22px;
+}
+.msli p span{
+	color:#820000;
+	font-weight: bold;
+}
+.mszx{
+	width:320px;
+	overflow: hidden;
+	position: absolute;
+	right: 20px;
+	bottom:10px;
+}
+.mszx a{
+	display: block;
+	line-height: 40px;
+	text-align: center;
+	color:#fff;
+	background-color:#bfbfbf;
+	border-radius: 4px;
+	float:left;
+	width:140px;
+	margin-top:20px;
+}
+.mszx a:nth-child(2){
+	background-color:#ff5500;
+	margin-left: 20px;
+}
+.maybe{width:1210px; margin:30px auto;}
+.maybe_tit{
+	font-size: 18px;color:#fff;line-height: 40px; background-color:#ff5500; border-radius: 8px;
+	text-align: center;margin: 20px auto;
+} 
+.zy_tj{width:100%; overflow: hidden;}
+.zy_tj li {width: 290px; float: left; margin-left: 10px; margin-bottom: 20px; text-align: center; line-height: 40px; position: relative;}
+.zy_tj li p{display: block;width: 100%; line-height: 30px; text-align: center; color:#fff; background-color: rgba(0,0,0,0.51); font-size: 18px; position: absolute; bottom: 0px; left: 0;}

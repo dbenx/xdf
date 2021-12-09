@@ -1,0 +1,165 @@
+@import"pub.css";/*引用公用CSS文件*/
+.fl{float: left;}
+.fr{float: right;}
+.clearfix:after{content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+
+.ds_title{ text-align: center; }
+.ds_title strong{ font-size: 40px; color: #505050; line-height: 54px;}
+.ds_title p{ font-size: 20px; color: #a7a7a7; line-height: 36px; }
+.wrap{ width:1280px; margin:0 auto;}
+.w1210{ width: 1210px; margin: 0 auto; }
+/*banner*/
+.banner .swiper-slide a {display:block;height: 450px;}
+.banner .swiper-pagination-bullet{width:14px;height:14px;display:inline-block;margin-right:8px;background:transparent;_display:inline;_font-size:0px; border:solid 1px #bfbfbf; border-radius:50%; -webkit-border-radius:50%; -moz-border-radius:50%; -ms-border-radius:50%; -o-border-radius:50%;opacity: 1;}
+.banner  .swiper-pagination-bullet-active{ background:#bfbfbf;}
+/*师者*/
+.box1{ margin-top: 34px; }
+.box1_con{ margin-top: 12px; }
+.box1_con > p{ font-size: 18px; color:#787878; line-height: 34px; text-indent: 2em;}
+.box1_con ul{ width: 1240px;  margin: 14px auto 0; }
+.box1_con ul li{ width: 183px; float: left; margin: 0 60px; text-align: center;}
+.box1_con ul li p{ font-size: 18px; color: #787878; line-height: 24px; margin-top: 14px;}
+/*中餐教学团队*/
+.box2{ height: 780px; background: url(/style/images/teacher/bg1.jpg) no-repeat top center; margin-top: 28px;}
+.box2 .ds_title{ padding-top: 42px; }
+.box2 .ds_title strong{ color: #fff; }
+.jx_con{ margin-top: 10px; }
+.jx_con p{ font-size: 18px; color: #fff; line-height: 34px; text-indent: 2em;}
+.swiper-container-jx,.swiper-container-xc{ width:100%; margin:12px auto 0;}
+.swiper-container-jx .swiper-wrapper,.swiper-container-xc .swiper-wrapper{
+  -webkit-transition-timing-function: linear;    
+  -moz-transition-timing-function: linear;
+  -ms-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  margin: 0 auto;
+}
+.swiper-container-jx .swiper-slide,.swiper-container-xc .swiper-slide{ position: relative; overflow: hidden; width: 300px !important; margin-right: 20px;}
+.ms-txt{ width: 100%; height: 120px; background: rgba(0,0,0,.8); position: absolute; left: 0; }
+.ms-txt p{ color: #fff; font-size: 16px; line-height: 24px; margin: 8px 20px; }
+.jx_btn{ width: 970px; margin: 20px auto 0;}
+.jx_btn a{ display: block; float: left; width: 263px; height: 58px; line-height: 58px; text-align:center; background: #f5f5f5; border: solid 1px #d2d2d2;
+ margin:0 25px; border-radius: 8px; -webkit-border-radius: 8px; -moz-border-radius: 8px; -ms-border-radius: 8px; -o-border-radius: 8px;}
+/*西点西餐*/
+.box3{ margin-top: 66px; }
+.box3 .jx_con p,.box4 .jx_con p{ color: #5b5b5b; }
+/*特聘*/
+.box4{ margin-top: 45px; }
+.box4 .tp_list{ width: 1180px; margin: 12px auto 0; }
+.box4 .tp_list li{ width: 260px; height: 270px; background: #f3f4ff; float: left; margin: 88px 15px 0; text-align: center;
+border-radius: 8px; -webkit-border-radius: 8px; -moz-border-radius: 8px; -ms-border-radius: 8px; -o-border-radius: 8px;}
+.box4 .tp_list li img{ margin-top: -60px; }
+.box4 .tp_list li strong{ display: block; font-size: 20px; color: #5b5b5b;line-height: 36px; margin-top: 10px; }
+.box4 .tp_list li p{ font-size: 18px; color: #5b5b5b; margin-left:24px; line-height: 30px; margin-top: 8px; }
+
+/*标题*/
+.title-main {
+  margin: 30px auto;
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+  font-weight: bold;
+  color: #d6d6d6;
+  z-index: 1;
+}
+.title-main::after {
+  width: 400px;
+  height: 65px;
+  content: '';
+  border: 1px solid;
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  margin-left: -140px;
+  z-index: -1;
+}
+.title-main strong {
+  color: #8aa826;
+  background: #fff;
+  padding-left: 20px;
+}
+.title-main span {
+  background: #fff;
+  font-size: 30px;
+  padding: 0 10px;
+}
+.title-main font {
+  font-size: 36px;
+  font-family: Impact;
+  background: #fff;
+  padding: 0 20px;
+}
+.title-main4:after {border: none;}
+.wenti {
+  width: 460px;
+  padding: 20px 0;
+  float: left;
+  margin-left: 90px;
+}
+.wenti li {
+  height: 30px;
+  line-height: 30px;
+  padding: 10px 20px;
+  border-bottom: 1px dashed #ccc;
+  overflow: hidden;
+}
+.wenti li a {
+  display: inline-block;
+  width: 100px;
+  margin-right: 20px;
+  background: #96d6ee;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  float: right;
+}
+/*报名表单*/
+.bgcolor {
+  background: #e9e9e9;
+  margin: 20px auto;
+
+}
+.bgcolor .w1210 {
+  padding-top: 30px;
+  background: url("/style/images/teacher/bm.jpg") no-repeat left bottom;
+}
+.bmbox {
+  width: 434px;
+  height: 428px;
+  margin-left: 756px;
+  background: #fff;
+}
+.bm-title {
+  text-align: center;
+  padding: 20px;
+}
+.bm-title strong {
+  font-size: 30px;
+  color: #0089e9;
+}
+.bm-input {
+  display: block;
+  width: 295px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #c9c9c9;
+  margin: 0 auto 20px;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+.bm-submit {
+  display: block;
+  width: 295px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto 20px;
+  border-radius: 50px;
+  text-align: center;
+  background: -webkit-linear-gradient(left, #ff875d, #ff545c); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #ff875d, #ff545c); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #ff875d, #ff545c); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #ff875d, #ff545c); /* ±ê×??????¨ */
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}

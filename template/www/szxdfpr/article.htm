@@ -1,0 +1,97 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <base target="_blank">
+    <title>
+        <!--{if $article.chapter && $article.subtitle}-->
+        <!--{$article.subtitle}-->_
+        <!--{/if}-->
+        <!--{$article.title}-->_
+        <!--{$category.name}-->_
+        <!--{$site.title}-->_
+        <!--{$site.seotitle}-->
+    </title>
+    <meta name="keywords" content="<!--{$article.keywords}-->" />
+    <meta name="description" content="<!--{$article.description}-->" />
+    <link href="/style/css/article.css" rel="stylesheet" type="text/css">
+    <script src="/style/js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<!--{include file="./header.htm"}-->
+<!--{include file="./nav.htm"}-->
+
+<div class="banner">
+    <a href="javascript:;" onclick="swtClick()"  rel="nofollow">
+        <img src="/style/images/about/banner.jpg" alt="" width="100%">
+    </a>
+</div>
+
+<div class="center">
+    <div class="f_left">
+        <div class="news_tit">
+            您现在的位置：<a href="<!--{$site.url}-->">首页</a> >
+            <!--{foreach value="catenav" from="$category.navArray"}-->
+                <a href='<!--{$catenav.url}-->'> <!--{$catenav.name}--> ></a>
+            <!--{/foreach}-->
+        </div>
+        <h1 class="arc_title"><!--{$article.title}--></h1>
+        <div class="arc_publish">
+            来源：<!--{$article.source|default:'深圳新东方烹饪学校'}--> 编辑：深圳新东方烹饪学校 时间：<!--{$article.pubdate|date:"Y-m-d"}-->
+        </div>
+        <div class="zhangxiao">
+            <!--{if $article.description}-->
+            <div class="arc_summary">
+                <b>文章摘要：</b> <!--{$article.description}-->
+            </div>
+            <!--{/if}-->
+            <!--{$article.body}-->
+        </div>
+        <div class="hslms_xx_sxpage">
+            <div>
+                <b>上一篇:</b>
+                <!--{iCMS:article:prev cid="$article.cid" id="$article.id"}-->
+                <!--{if $article_prev}-->
+                <a href="<!--{$article_prev.url}-->" class="prev" target="_self">
+                    <!--{$article_prev.title}-->
+                </a>
+                <!--{else}-->
+                没有了
+                <!--{/if}-->
+            </div>
+
+            <div>
+                <b>下一篇:</b>
+                <!--{iCMS:article:next cid="$article.cid" id="$article.id"}-->
+                <!--{if $article_next}-->
+                <a href="<!--{$article_next.url}-->" class="next" target="_self">
+                    <!--{$article_next.title}-->
+                </a>
+                <!--{else}-->
+                没有了
+                <!--{/if}-->
+
+            </div>
+            <p class="clearfix"></p>
+        </div>
+    </div>
+
+
+<!--{include file="./right.htm"}-->
+    <script type="text/javascript">
+        setInterval(
+            function () {
+                for(i=0; i<$('.zytj-num').length; i++){
+                    var num = parseInt(40*Math.random()+10);
+                    $('.zytj-num').eq(i).html(num);
+                }
+            },2000)
+    </script>
+</div>
+
+<div class="clear"></div>
+<!--{include file="./footer.htm"}-->
+</body>
+
+</html>

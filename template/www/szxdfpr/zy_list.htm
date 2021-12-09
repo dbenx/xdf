@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="/style/css/swiper-4.5.0.min.css">
+    <link rel="stylesheet" href="/style/css/zylist.css">
+    <title><!--{$category.name}-->_<!--{$category.title}-->_<!--{$site.title}--></title>
+    <meta name="keywords" content="<!--{$category.keywords}-->" />
+    <meta name="description" content="<!--{$category.description}-->" />
+</head>
+<body>
+<!--{include file="./header.htm"}-->
+<!--{include file="./nav.htm"}-->
+<div class="x-nav">
+    <video muted="" autoplay="" loop="" src="/style/video/zhuanye_banner.mp4"></video>
+    <div class="x-nav-content">
+        <div class="x-nav-content-mk">
+            <span>Professional Courses</span>
+            <h2>你想学的专业 这里都有</h2>
+        </div>
+    </div>
+    <span class="x-nav-musk"></span>
+</div>
+
+
+<div class="zy_nav">
+    <ul class="tbody">
+        <li class="cur">综合专业</li>
+        <li class="">中餐专业</li>
+        <li class="">西点西餐专业</li>
+        <li class="">创业专业</li>
+    </ul>
+</div>
+
+
+
+
+
+<!--综合专业-->
+<div class="czy_cbox tbody" style="display: block;">
+    <div class="czy_con">
+        <div class="czy_tit">
+            <p class="czy_title">综合专业</p>
+        </div>
+        <!--{iCMS:article:list loop="true" row="100" data="true"  orderby="weight"  cid="2,3,4"  }-->
+        <div class="zym_list" style="width:583px;">
+            <p class="zym_tit"><!--{$article_list.title}--><span class="zym_tim"><!--{$article_list.stitle}--></span></p>
+            <img src="<!--{$article_list.pic.url}-->">
+            <p class="zym_ftit"><!--{$article_list.data.subtitle}--></p>
+            <p class="zym_txt"><!--{$article_list.description}--></p>
+            <p class="zym_btn" style="padding-top:0"><a href="<!--{$article_list.url}-->">课程详情</a>
+                <a href="javascript:;" onclick="swtClick();" class="zxUrl">学费咨询</a>
+            </p>
+            <div class="clear"></div>
+        </div>
+        <!--{iCMSelse}-->
+        <p class="p-4">暂无相关内容</p>
+        <!--{/iCMS}-->
+    </div>
+</div>
+
+<!--中餐专业-->
+<div class="czy_cbox tbody" style="display: block;">
+    <div class="czy_con">
+        <div class="czy_tit">
+            <p class="czy_title">中餐专业</p>
+            <p class="czy_ftitle">学热门技术，两年制及以上专业可考取大专学历，入学签订就业协议，薪资高好就业。</p>
+        </div>
+
+        <div class="czy_main">
+            <!--{iCMS:article:list loop="true" cid='2' row="100" orderby="weight" }-->
+            <div class="zym_list" style="width:584px;">
+                <p class="zym_tit"><!--{$article_list.title}--><span class="zym_tim"><!--{$article_list.stitle}--></span></p>
+                <img src="<!--{$article_list.pic.url}-->">
+                <p class="zym_ftit"><!--{$article_list.subtitle}--></p>
+                <p class="zym_txt"><!--{$article_list.description}--></p>
+                <p class="zym_btn" style="padding-top:0"><a href="<!--{$article_list.url}-->">课程详情</a>
+                    <a href="javascript:;" onclick="swtClick();" class="zxUrl">学费咨询</a>
+                </p>
+                <div class="clear"></div>
+            </div>
+            <!--{iCMSelse}-->
+            <p class="p-4">暂无相关内容</p>
+            <!--{/iCMS}-->
+
+
+        </div>
+
+
+    </div>
+</div>
+
+<div class="czy_cbox tbody" style="display: block;">
+    <div class="czy_con">
+        <div class="czy_tit">
+            <p class="czy_title">西点西餐专业</p>
+            <p class="czy_ftitle">选择精品专业，掌握一技之长，成就金色人生</p>
+        </div>
+        <div class="czy_main">
+            <!--{iCMS:article:list loop="true" cid='3' row="100" orderby="weight" }-->
+            <div class="zym_list" style="width:584px;">
+                <p class="zym_tit"><!--{$article_list.title}--><span class="zym_tim"><!--{$article_list.stitle}--></span></p>
+                <img src="<!--{$article_list.pic.url}-->">
+                <p class="zym_ftit"><!--{$article_list.subtitle}--></p>
+                <p class="zym_txt"><!--{$article_list.description}--></p>
+                <p class="zym_btn" style="padding-top:0"><a href="<!--{$article_list.url}-->">课程详情</a>
+                    <a href="javascript:;" onclick="swtClick();" class="zxUrl">学费咨询</a>
+                </p>
+                <div class="clear"></div>
+            </div>
+            <!--{iCMSelse}-->
+            <p class="p-4">暂无相关内容</p>
+            <!--{/iCMS}-->
+            <div class="clear"></div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="czy_cbox tbody" style="display: block;">
+    <div class="czy_con">
+        <div class="czy_tit">
+            <p class="czy_title">短期创业专业</p>
+            <p class="czy_ftitle">小投入，大回报，开店创业好选择！</p>
+        </div>
+        <div class="czy_main">
+
+            <!--{iCMS:article:list loop="true" pid='3' row="100" orderby="weight" }-->
+            <div class="zym_list" style="width:584px;">
+                <p class="zym_tit"><!--{$article_list.title}--><span class="zym_tim"><!--{$article_list.stitle}--></span></p>
+                <img src="<!--{$article_list.pic.url}-->">
+                <p class="zym_ftit"><!--{$article_list.subtitle}--></p>
+                <p class="zym_txt"><!--{$article_list.description}--></p>
+                <p class="zym_btn" style="padding-top:0"><a href="<!--{$article_list.url}-->">课程详情</a>
+                    <a href="javascript:;" onclick="swtClick();" class="zxUrl">学费咨询</a>
+                </p>
+                <div class="clear"></div>
+            </div>
+            <!--{iCMSelse}-->
+            <p class="p-4">暂无相关内容</p>
+            <!--{/iCMS}-->
+        </div>
+        <div class="clear"></div>
+
+    </div>
+</div>
+
+<!--{include file="./footer.htm"}-->
+
+<script src="/style/js/jquery-1.11.3.min.js"></script>
+
+<script src="/style/js/swiper-4.5.0.min.js"></script>
+
+<script>
+    $(".czy_cbox").hide();
+    $(".czy_cbox").eq(0).fadeIn();
+    $(".zy_nav li").click(function () {
+        if ($(this).attr("class") != "cur") {
+            var tab_index = $(this).index();
+            $(".zy_nav li").removeClass("cur");
+            $(this).addClass("cur");
+            $(".czy_cbox").hide();
+            $(".czy_cbox").eq(tab_index).fadeIn();
+        }
+    })
+
+    //滑动切换
+    function tabs(tabTit, on, tabCon) {
+        $(tabTit).children(':first').addClass(on).css({ 'background-color': '#fc9a00' }).append("<img id='icon' src='/images/zhuanye/zylist/icon1.png'>");
+        $(tabCon).children(':first').show().siblings().hide();
+        $(tabTit).children().click(function () {
+            $(tabTit).children().find('#icon').remove();
+            $(this).css({ 'background-color': '#fc9a00' }).append("<img id='icon' src='/images/zhuanye/zylist/icon1.png'>").siblings().css({ 'background-color': '#b8b4b4' });
+            $(this).addClass(on).siblings().removeClass(on);
+            var index = $(tabTit).children().index(this);
+            $(tabCon).children().eq(index).stop().show().siblings().hide();
+        });
+    }
+    tabs('.zytabt', 'on', '.zytabc');
+
+
+
+    $(window).scroll(function () {
+        var title_top =$('.zy_nav').offset().top;
+        var scroll =$(window).scrollTop();
+        //console.log(scroll )
+        if(scroll > 700){
+            $('.zy_nav ').addClass('fixed_box');
+        }else{
+            $('.zy_nav').removeClass('fixed_box');
+        }
+    });
+</script>
+</body>
+</html>

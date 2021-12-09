@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title><!--{$category.name}-->_<!--{$category.title}-->_<!--{$site.title}--></title>
+    <meta name="keywords" content="<!--{$category.keywords}-->" />
+    <meta name="description" content="<!--{$category.description}-->" />
+    <link rel="stylesheet" href="/style/css/mingshi.css">
+</head>
+<body>
+<!--{include file="./header.htm"}-->
+<!--{include file="./nav.htm"}-->
+<div class="hslms_bg_video w100">
+    <div class="hslms_bg_wz">
+        <h1>MASTER MISSIONARY WORK<span>大师云集 传道授业解惑</span></h1>
+    </div>
+    <video muted autoplay loop src="/style/images/teacher/msbanner.mp4"></video>
+</div>
+<ul class="msbox">
+
+    <!--{iCMS:article:list loop="true" orderby="sort"  data= "true"  cid="$category.cid"}-->
+    <li class="msli">
+        <img src="<!--{$article_list.mpic.url}-->">
+        <div class="mstxt">
+            <h3><!--{$article_list.title}--></h3>
+            <p><span>职称：</span><!--{$article_list.stitle}--></p>
+            <p><span>擅长：</span><!--{$article_list.data.subtitle}--></p>
+            <p><span>所获荣誉：<br></span>
+                <!--{$article_list.description}-->
+            </p>
+            <div class="mszx"><a href="javascript:;" class="zxUrl">咨询老师</a>
+                <a target="_blank" href="<!--{$article_list.url}-->">老师简介</a></div>
+        </div>
+    </li>
+    <!--{/iCMS}-->
+
+</ul>
+<div class="maybe">
+    <div class="maybe_tit">你可能感兴趣</div>
+    <ul class="zy_tj">
+        <!--{iCMS:article:list loop="true" pid='1'  row='4' orderby="sort"   cid="2,3"}-->
+            <li><a href="<!--{$article_list.url}-->" target="_blank"><img src="<!--{$article_list.pic.url}-->" alt="<!--{$article_list.title}-->" width="290"><!--{$article_list.subtitle}--><p><!--{$article_list.title}--></p></a></li>
+        <!--{/iCMS}-->
+
+
+
+    </ul>
+</div>
+<div class="swtRirhgt clearfix">
+    <a href="javascript:void(0)" class="xuefei zxUrl" target="_blank">
+        <p></p>
+    </a>
+    <a href="javascript:void(0)" class="zhuanye zxUrl" target="_blank">
+        <p></p>
+    </a>
+    <a href="javascript:void(0)" class="swtzx zxUrl" target="_blank">
+        <p></p>
+    </a>
+    <a href="javascript:void(0)" class="telzx" target="_blank">
+        <p></p>
+    </a>
+    <a target="_blank" href="javascript:;" class="qqzx zxUrl">
+        <p></p>
+    </a>
+    <div class="wechatzx">
+        <p></p>
+        <div class="qrcode"></div>
+    </div>
+    <div class="backtopbtn">
+        <p></p>
+    </div>
+</div>
+
+
+<!--{include file="./footer.htm"}-->
+<script src="/style/js/jquery-1.11.3.min.js"></script>
+
+
+</body>
+</html>

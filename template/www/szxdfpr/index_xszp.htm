@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title><!--{$category.name}-->_<!--{$category.title}-->_<!--{$site.title}--></title>
+    <meta name="keywords" content="<!--{$category.keywords}-->" />
+    <meta name="description" content="<!--{$category.description}-->" />
+    <link rel="stylesheet" href="/style/css/zp.css" />
+</head>
+<body>
+<!--{include file="./header.htm"}-->
+<!--{include file="./nav.htm"}-->
+<div class="banner"></div>
+<div class="main wrap">
+    <ul class="justify mt30 xylist">
+        <li><strong>中餐烹饪</strong>学在深圳新东方 技赢未来<a href="/zy/">详细专业</a></li>
+        <li><strong>高星级饭店运营与管理</strong>实力抢占人生C位<a href="/zy/">详细专业</a></li>
+        <li><strong>西点西餐</strong>做餐饮界的时尚达人<a href="/zy/">详细专业</a></li>
+        <li><strong>短期培训</strong>get新技能，老司机带你飞<a href="/zy/">详细专业</a></li>
+    </ul>
+
+    <div class="justify mt30 zp_nav">
+        <!--{iCMS:category:list loop="true" row="10" stype="sub" cid="7"}-->
+        <a href="<!--{$category_list.url}-->" target="_blank"> <!--{$category_list.name}--></a>
+        <!--{/iCMS}-->
+
+    </div>
+
+
+    <ul class="justify mt30 zplist">
+        <li class="zplist_title">
+            <strong><span>01</span>中餐作品</strong>
+            <p>美好的味道，源自食材和味蕾的完美碰撞，在亿万次碰撞而生的奇迹当中，怀揣着延绵千年的传奇，在筵席间传礼，唇齿间留味，在人心中入魂，这就是中国菜！</p>
+        </li>
+        <!--{iCMS:article:list loop="true" row="7" orderby="hot" cid="15"}-->
+            <li>
+                <div class="zp_imgbox">
+                    <img class="lazy" src="/style/images/loading.gif" data-original="<!--{$article_list.pic.url}-->" alt="<!--{$article_list.title}-->">
+                    <center class="zp_img_tit">
+                        <strong><!--{$article_list.title}--></strong>
+                        <a href="<!--{$article_list.url}-->" target="_blank">查看全部</a>
+                    </center>
+                </div>
+                <a href="javascript:;" onclick="swtClick();"  class="zplist_a">预约免费体验课</a>
+            </li>
+        <!--{/iCMS}-->
+    </ul>
+
+
+    <div class="xybox">
+        <p><strong>中餐烹饪</strong><br>两年技能+证书专业，一年制纯技能就业专业；为你量身打造你的未来
+            技能+认证+能就业；为你量身打造你的未来</p>
+        <a href="javascript:;" onclick="swtClick();"   target="_blank">咨询专业</a>
+    </div>
+    <hr class="mt30 wrap" style="border: 1px solid #989898;">
+
+    <ul class="justify mt30 zplist">
+
+        <!--{iCMS:article:list loop="true" row="1" start= "0" orderby="hot" cid="16"}-->
+        <li>
+            <div class="zp_imgbox">
+                <img class="lazy" src="/style/images/loading.gif" data-original="<!--{$article_list.pic.url}-->" alt="<!--{$article_list.title}-->">
+                <center class="zp_img_tit">
+                    <strong><!--{$article_list.title}--></strong>
+                    <a href="<!--{$article_list.url}-->" target="_blank">查看全部</a>
+                </center>
+            </div>
+            <a href="javascript:;" onclick="swtClick();"  class="zplist_a">预约免费体验课</a>
+        </li>
+        <!--{/iCMS}-->
+        <li class="zplist_title">
+            <strong><span>02</span>西点作品</strong>
+            <p>美丽精致的蛋糕，美味的艺术佳品，芬芳甜蜜的甜品，唯美的艺术呈现，视觉与味觉的双重享受，这些都是我们的追求。</p>
+        </li>
+        <!--{iCMS:article:list loop="true" row="6" start= "1" orderby="hot" cid="16"}-->
+        <li>
+            <div class="zp_imgbox">
+                <img class="lazy" src="/style/images/loading.gif" data-original="<!--{$article_list.pic.url}-->" alt="<!--{$article_list.title}-->">
+                <center class="zp_img_tit">
+                    <strong><!--{$article_list.title}--></strong>
+                    <a href="<!--{$article_list.url}-->" target="_blank">查看全部</a>
+                </center>
+            </div>
+            <a href="javascript:;" onclick="swtClick();"  class="zplist_a">预约免费体验课</a>
+        </li>
+        <!--{/iCMS}-->
+    </ul>
+    <div class="xybox">
+        <p><strong>西点西餐</strong><br>两年技能+证书专业，为你量身打造你的未来
+            长短期专业品种齐全，随到随学，学会为止让你创业无忧！</p>
+        <a href="javascript:;" onclick="swtClick();"   target="_blank">咨询专业</a>
+    </div>
+    <hr class="mt30 wrap" style="border: 1px solid #989898;">
+
+    <ul class="justify mt30 zplist">
+
+        <!--{iCMS:article:list loop="true" row="6" start= "0" orderby="hot" cid="17"}-->
+        <li>
+            <div class="zp_imgbox">
+                <img class="lazy" src="/style/images/loading.gif" data-original="<!--{$article_list.pic.url}-->" alt="<!--{$article_list.title}-->">
+                <center class="zp_img_tit">
+                    <strong><!--{$article_list.title}--></strong>
+                    <a href="<!--{$article_list.url}-->" target="_blank">查看全部</a>
+                </center>
+            </div>
+            <a href="javascript:;" onclick="swtClick();"  class="zplist_a">预约免费体验课</a>
+        </li>
+        <!--{/iCMS}-->
+
+
+        <li class="zplist_title">
+            <strong><span>03</span>西餐作品</strong>
+            <p>喜欢西餐，不仅仅是因为环境好更主要的还是因为西餐的精致，加上能触动你味蕾的感受</p>
+        </li>
+        <!--{iCMS:article:list loop="true" row="1" start= "6" orderby="hot" cid="17"}-->
+        <li>
+            <div class="zp_imgbox">
+                <img class="lazy" src="/style/images/loading.gif" data-original="<!--{$article_list.pic.url}-->" alt="<!--{$article_list.title}-->">
+                <center class="zp_img_tit">
+                    <strong><!--{$article_list.title}--></strong>
+                    <a href="<!--{$article_list.url}-->" target="_blank">查看全部</a>
+                </center>
+            </div>
+            <a href="javascript:;" onclick="swtClick();"  class="zplist_a">预约免费体验课</a>
+        </li>
+        <!--{/iCMS}-->
+    </ul>
+    <div class="xybox">
+        <p><strong>西餐专业</strong><br>两年技能+证书专业，一年制纯技能就业专业；为你量身打造你的未来
+            短期专业品种齐全，随到随学，学会为止让你创业无忧！</p>
+        <a href="javascript:;" onclick="swtClick();"   target="_blank">咨询专业</a>
+    </div>
+
+
+    <ul class="justify mt30 zplist">
+
+
+        <!--{iCMS:article:list loop="true" row="7" orderby="hot" cid="18"}-->
+        <li>
+            <div class="zp_imgbox">
+                <img class="lazy" src="/style/images/loading.gif" data-original="<!--{$article_list.pic.url}-->" alt="<!--{$article_list.title}-->">
+                <center class="zp_img_tit">
+                    <strong><!--{$article_list.title}--></strong>
+                    <a href="<!--{$article_list.url}-->" target="_blank">查看全部</a>
+                </center>
+            </div>
+            <a href="javascript:;" onclick="swtClick();"  class="zplist_a">预约免费体验课</a>
+        </li>
+        <!--{/iCMS}-->
+
+
+        <li class="zplist_title">
+            <strong><span>04</span>中式面点</strong>
+            <p>无论西点多么丰富多彩，但中式点心的味道总是独具一格。</p>
+        </li>
+    </ul>
+
+    <div class="xybox">
+        <p><strong>中式面点</strong><br>随到随学，品种齐全，技能+运营（技能提升、创业帮扶）</p>
+        <a href="javascript:;" onclick="swtClick();"   target="_blank">咨询专业</a>
+    </div>
+
+    <hr class="mt30 wrap" style="border: 1px solid #989898;">
+    <ul class="justify mt30 zplist">
+
+        <!--{iCMS:article:list loop="true" row="6" start= "0" orderby="hot" cid="18"}-->
+        <li>
+            <div class="zp_imgbox">
+                <img class="lazy" src="/style/images/loading.gif" data-original="<!--{$article_list.pic.url}-->" alt="<!--{$article_list.title}-->">
+                <center class="zp_img_tit">
+                    <strong><!--{$article_list.title}--></strong>
+                    <a href="<!--{$article_list.url}-->" target="_blank">查看全部</a>
+                </center>
+            </div>
+            <a href="javascript:;" onclick="swtClick();"  class="zplist_a">预约免费体验课</a>
+        </li>
+        <!--{/iCMS}-->
+
+
+
+
+
+        <li class="zplist_title">
+            <strong><span>05</span>特色小吃</strong>
+            <p>美食文化代代传承，每座城市都有流传百年的传统特色美食。他们不仅是果腹之需，还是童年记忆，更是走遍天下都戒不掉的乡愁。</p>
+        </li>
+
+        <!--{iCMS:article:list loop="true" row="1" start= "6" orderby="hot" cid="18"}-->
+        <li>
+            <div class="zp_imgbox">
+                <img class="lazy" src="/style/images/loading.gif" data-original="<!--{$article_list.pic.url}-->" alt="<!--{$article_list.title}-->">
+                <center class="zp_img_tit">
+                    <strong><!--{$article_list.title}--></strong>
+                    <a href="<!--{$article_list.url}-->" target="_blank">查看全部</a>
+                </center>
+            </div>
+            <a href="javascript:;" onclick="swtClick();"  class="zplist_a">预约免费体验课</a>
+        </li>
+        <!--{/iCMS}-->
+    </ul>
+
+    <div class="xybox">
+        <p><strong>特色小吃</strong><br>专业的面塑大师手把手教学，塑造您心目中的完美艺术形象。</p>
+        <a href="javascript:;" onclick="swtClick();"   target="_blank">免费体验</a>
+    </div>
+    <hr class="mt30 wrap" style="border: 1px solid #989898;">
+    <ul class="justify mt30 zplist">
+        <li class="zplist_title">
+            <strong><span>06</span>私人定制</strong>
+            <p>食品雕刻是艺术的结晶体现，也是中国五千年的烹饪文化长河中留下来的一朵夺目的奇葩。</p>
+        </li>
+
+        <!--{iCMS:article:list loop="true" row="7" orderby="hot" cid="20"}-->
+        <li>
+            <div class="zp_imgbox">
+                <img class="lazy" src="/style/images/loading.gif" data-original="<!--{$article_list.pic.url}-->" alt="<!--{$article_list.title}-->">
+                <center class="zp_img_tit">
+                    <strong><!--{$article_list.title}--></strong>
+                    <a href="<!--{$article_list.url}-->" target="_blank">查看全部</a>
+                </center>
+            </div>
+            <a href="javascript:;" onclick="swtClick();"  class="zplist_a">预约免费体验课</a>
+        </li>
+        <!--{/iCMS}-->
+    </ul>
+
+    <div class="xybox">
+        <p><strong>个性定制</strong><br>专业的烹饪大师为您定制专属你的口味，定制您的独家秘制口味。</p>
+        <a href="javascript:;" onclick="swtClick();"   target="_blank">免费体验</a>
+    </div>
+    <hr class="mt30 wrap" style="border: 1px solid #989898;">
+
+</div>
+
+<!--{include file="./footer.htm"}-->
+
+<script src="/style/js/jquery-1.11.3.min.js"></script>
+<script src="/style/js/jquery.lazyload.js"></script>
+<script>
+    $(document).ready(function() {
+        $('img.lazy').lazyload({
+            effect: "fadeIn",
+            skip_invisible : false
+        });
+    });
+</script>
+</body>
+</html>

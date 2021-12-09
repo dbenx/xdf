@@ -1,0 +1,168 @@
+@import"pub.css";/*引用公用CSS文件*/
+/* CSS Document */
+input {outline: none;}
+.wrap {width: 1280px;margin: auto;}
+.justify {
+  text-align: justify;
+  text-justify:inter-ideograph;
+  font-size: 0;
+}
+.justify::after {
+  display: inline-block;
+  content: '';
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  vertical-align: top;
+}
+.mt30 {margin: 30px auto;}
+.banner {
+  width: 100%;
+  height: 450px;
+  background: url("/style/images/zp/zp_banner.jpg") no-repeat center;
+  overflow: hidden;
+}
+.xylist li {
+  display: inline-block;
+  width: 310px;
+  height: 150px;
+  background: #feec6e;
+  border-radius: 10px;
+  color: #cc9933;
+  font-size: 1rem;
+  text-align: center;
+  vertical-align: top;
+}
+.xylist li strong {
+  display: block;
+  font-size: 24px;
+  color: #b6740e;
+  margin: 30px auto 10px;
+}
+.xylist li a {
+  display: block;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  background: #fff;
+  border-radius: 50px;
+  font-size: 18px;
+  color: #989898;
+  margin: 10px auto;
+}
+.zp_nav {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #989898;
+  text-align: center;
+}
+.zp_nav a {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #989898;
+  border-radius: 50px;
+  font-size: 18px;
+  color: #989898;
+  margin-right: 6px;
+}
+
+.zplist li {
+  display: inline-block;
+  width: 310px;
+  height: 257px;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #989898;
+  overflow: hidden;
+  vertical-align: top;
+  float: left;
+  margin-right: 10px;
+}
+.zplist_title > strong {
+  display: block;
+  font-size: 30px;
+  color: #e4393c;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.zplist_title > strong > span {
+  display: block;
+  font-size: 60px;
+}
+.zplist_title > p {
+  text-indent: 2em;
+  line-height: 1.5em;
+}
+.zp_imgbox {
+  width: 310px;
+  height: 207px;
+  position: relative;
+}
+.zp_imgbox > img {
+  width: 310px;
+  height: 207px;
+}
+.zp_img_tit {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0, .5);
+  color: #fff;
+  padding: 40px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.35s;
+  transform: scale(0);
+}
+.zp_imgbox:hover .zp_img_tit {transform: scale(1);}
+.zp_img_tit > strong {
+  display: table-cell;
+  height: 70px;
+  font-weight: normal;
+  vertical-align: middle;
+}
+.zp_img_tit > a {
+  display: block;
+  width: 140px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  margin: 20px auto 0;
+}
+.zplist_a {
+  display: block;
+  box-sizing: border-box;
+  width: 310px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #989898;
+  text-align: center;
+}
+
+.xybox {
+  background: #eee;
+  border-radius: 10px;
+}
+.xybox > p {
+  display: inline-block;
+  width: 530px;
+  line-height: 2em;
+  padding: 10px 100px;
+  vertical-align: middle;
+}
+.xybox > p > strong {
+  font-size: 24px;
+}
+.xybox > a {
+  display: inline-block;
+  width: 248px;
+  height: 48px;
+  line-height: 48px;
+  border: 1px solid #a40000;
+  color: #a40000;
+  vertical-align: middle;
+  text-align: center;
+}
