@@ -18,16 +18,17 @@ rewrite "^/about/(\w+)/index.html$"   /category.php?dir=$1 last;
 rewrite "^/about/\w+/(\d+)_(\d+).html$"  /article.php?id=$1&page=$2 last;
 rewrite "^/about/\w+/(\d+).html$"            /article.php?id=$1 last;
 
-##?У????
+##???????
 rewrite "^/teacher/(\w+)/index_(\d+).html$"  /category.php?dir=$1&page=$2 last;
 rewrite "^/teacher/(\w+)/$"                            /category.php?dir=$1 last;
 rewrite "^/teacher/(\w+)/index.html$"   /category.php?dir=$1 last;
 rewrite "^/teacher/\w+/(\d+)_(\d+).html$"  /article.php?id=$1&page=$2 last;
 rewrite "^/teacher/\w+/(\d+).html$"            /article.php?id=$1 last;
 
-##学生作品
+##??????
 rewrite "^/xszp/(\w+)/index_(\d+).html$"  /category.php?dir=$1&page=$2 last;
 rewrite "^/xszp/(\w+)/$"                            /category.php?dir=$1 last;
 rewrite "^/xszp/(\w+)/index.html$"   /category.php?dir=$1 last;
 rewrite "^/xszp/\w+/(\d+)_(\d+).html$"  /article.php?id=$1&page=$2 last;
 rewrite "^/xszp/\w+/(\d+).html$"            /article.php?id=$1 last;
+
